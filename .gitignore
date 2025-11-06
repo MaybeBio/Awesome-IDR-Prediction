@@ -1,0 +1,41 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors / IDE
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Notebooks
+*.ipynb_checkpoints/
+
+# Node
+node_modules/
+
+# Build / Dist / Coverage
+build/
+dist/
+.coverage
+.coverage.*
+htmlcov/
+pytest_cache/
+
+# Logs / temp
+*.log
+*.tmp
+/tmp/
+
+# OS-specific
+ehthumbs.db
+Icon?
