@@ -1,0 +1,11 @@
+# Zoran Obradovic LAB
+
+[← Back to list](../README.md#temple-university)
+
+## VSL2
+
+### VSL2 Abstract
+Due to the functional importance of intrinsically disordered proteins or protein regions, prediction of intrinsic protein disorder from amino acid sequence has become an area of active research as witnessed in the 6th experiment on Critical Assessment of Techniques for Protein Structure Prediction (CASP6). Since the initial work by Romero et al. (Identifying disordered regions in proteins from amino acid sequences, IEEE Int. Conf. Neural Netw., 1997), our group has developed several predictors optimized for long disordered regions (>30 residues) with prediction accuracy exceeding 85%. However, these predictors are less successful on short disordered regions (≤30 residues). A probable cause is a length-dependent amino acid compositions and sequence properties of disordered regions.
+
+### VSL2 Model/Method
+VSL2B uses 26 features derived from local amino acid composition of the partial sequence within the input window, including the 20 amino acid frequencies, the spacer character frequency, the K2-entropy measure of local sequence complexity, the average net charge, the average hydrophobicity, the charge-hydrophobicity ratio and the average flexibility index. We applied feature selection using a permutation-test-based feature filter and several other algorithms implemented in the WEKA data mining package. Principal component analysis (PCA) was then performed to de-correlate the selected features and further reduce the sample dimensionality by keeping the variance at 95%. We used the SVMlight implementation for building SVM predictors. A single-input logistic regression model was trained to calibrate the SVM output into posterior probability. An embedded 5-fold cross-validation was performed to select the optimal parameter C which represents the trade-off between training error and margin. A final SVM predictor can then be built with available sequences using the selected C. A moving-average approach was applied to smooth the raw predictions to remove occasional misclassifications, based on the assumption that neighbouring residues often share the same structural property. In this approach, the final prediction for a given residue is calculated as the average of raw predictions for neighbouring residues.
