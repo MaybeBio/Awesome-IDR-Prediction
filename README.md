@@ -514,7 +514,7 @@ https://github.com/realbigws/RaptorX_Property_Fast
       - Web server: [Integrated into the CAID Prediction Portal](https://caid.idpcentral.org/portal)
       - REST API: N/A
       - Docker image: N/A
-      - GitHub repository: https://github.com/BioComputingUP/
+      - GitHub repository: https://github.com/BioComputingUP/AlphaFold-disorder
       - Others: N/A
   - AlphaFold3-disorder: AlphaFold-binding, AlphaFold-pLDDT, AlphaFold-rsa 
     - Paper: N/A 
