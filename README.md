@@ -438,18 +438,10 @@ https://github.com/realbigws/RaptorX_Property_Fast
       - Docker image: N/A
       - GitHub repository: https://github.com/DagmarIlz/SETH
       - Others: https://bio.tools/seth_1
-</details>
-
-<details>
-<summary>Julius Schlensok</summary>
-
-- Lab website: [Profile](https://schlensok.org/) (⚠️ Not sure if he is a PI)
-
-- Tools
   - UdonPred: UdonPred-combined, UdonPred-DisProt, UdonPred-TriZOD
     - Paper: N/A
     - Abstract: N/A
-    - Model/Method: [Read more →](docs/Schlensok-lab.md#udonpred-modelmethod)
+    - Model/Method: [Read more →](docs/Rost-lab.md#udonpred-modelmethod)
     - Access:
       - Web server: N/A
       - REST API: N/A 
